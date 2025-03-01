@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import BrowseBooks from './components/BrowseBooks';
 import Notfound from './components/Notfound';
+import AddBooks from './components/AddBook';
 
 const router = createBrowserRouter(
   [
@@ -22,6 +23,14 @@ const router = createBrowserRouter(
         <>
         <Navbar />
         <BrowseBooks />
+        </>
+    },
+    {
+      path:"/addbook",
+      element:
+        <>
+        <Navbar />
+        <AddBooks />
         </>
     },
     {

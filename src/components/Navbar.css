@@ -1,0 +1,44 @@
+.navbarContainer{
+    background-color: #F7F9EB;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 25px 25px 0 0 ;
+}
+.title{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.link{
+    color: black;
+    font-weight: 500;
+    font-size: large;
+}
+.link:hover{
+    color: #A0785A;
+}
+.addBookButton{
+    color: white;
+    background-color: black;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 6rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+.addBookButton:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); 
+}
+.btnContainer{
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}

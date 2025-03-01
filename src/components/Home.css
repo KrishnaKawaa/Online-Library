@@ -1,0 +1,29 @@
+.homeContainer{
+    background-color: #F7F9EB;
+    display: flex;
+    justify-content: space-around;align-items: center;
+    border-radius: 0 0 25px 25px;
+}
+.header{
+    font-family: "EB Garamond", serif;
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1;
+}
+.header:hover{
+    color: #A0785A;
+}
+.bookImg{
+    height: 35rem;
+    width: 35rem;
+}
+.welcomeMsg{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+
+}
+.welcomePara{
+    font-size: 1.5rem;
+}
