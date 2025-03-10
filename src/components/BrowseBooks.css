@@ -1,0 +1,22 @@
+.input{
+    width: fit-content;
+    font-size: x-large;
+    border-radius: 15px;
+}
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #F7F9EB;
+}
+.inputButton{
+    background-color: #F7F9EB;
+    border-radius: 25px;
+    padding: 2px;
+    font-size: x-large;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.382);
+}
+.bookDescription{
+    font-size: smaller;
+}

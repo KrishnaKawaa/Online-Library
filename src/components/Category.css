@@ -1,0 +1,109 @@
+.headingContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #F7F9EB;
+    border-radius: 15px 15px 0 0 ;
+    font-family: "EB Garamond", serif;
+    padding: 0;
+}
+.heading{
+    font-family: "EB Garamond", serif;
+    font-size: calc(2 * 1.2rem);
+    margin: 0.7%;
+    font-weight: 500;
+}
+
+
+.btnList{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    border: 4px solid #F7F9EB;
+}
+
+.button{
+    height: 7rem;
+    width: 7rem;
+    animation: moveTrain 3s linear infinite alternate;
+    cursor: pointer;
+    font-size: large;
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    border-radius: 25px;
+    background-color: #F7F9EB;
+
+}
+
+@keyframes moveTrain{
+    0%{transform: translateX(50%);
+        box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.611);}
+    100%{transform: translateX(-50%);
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.611);}
+}
+/* Display Books */
+.DisplayBookContainer{
+    border: 4px solid #F7F9EB;
+    border-radius: 0 0 15px 15px ;
+    }
+.bookContainer{
+    background-color: #F7F9EB;
+    margin: 10px;
+    width: 4rem;
+    height: 6rem;
+}
+.headContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F9EB;
+    margin: 0;
+    padding-bottom: 3px;
+    font-family: "EB Garamond", serif;
+    font-size:  1.2rem;
+    font-weight: 500;
+}
+.innerHeading{
+    display: flex;
+    justify-content: center;
+    color: #F7F9EB;
+    font-family: "EB Garamond", serif;
+    font-weight: 300;
+    font-size: xx-large;
+}
+
+/* Books */
+.allbookContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+}
+.bookContainer{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    width: 600px;
+    height: 400px;
+    overflow-y: auto; /* Vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.bookTitle{
+    text-decoration: underline;
+    font-size: x-large;
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+}
+.bookAuthor{
+    font-size: large;
+}
+.bookDescription{
+    font-size: large;
+}
+.bookImage{
+    height: 200px;
+    width: 200px;
+}
