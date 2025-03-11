@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import BrowseBooks from './components/BrowseBooks';
 import Notfound from './components/Notfound';
 import AddBooks from './components/AddBook';
-import BookDetails from './components/BookDetails';
 import Category from './components/Category';
 
 
@@ -25,7 +24,7 @@ const router = createBrowserRouter(
       path:"/browsebooks",
       element:
         <>
-        <Navbar />
+        <Navbar /><hr/>
         <BrowseBooks />
         </>
     },
@@ -38,12 +37,11 @@ const router = createBrowserRouter(
         </>
     },
     {
-      path:"/bookdetails",
-      element:<BookDetails />
-    },
-    {
       path:'/category',
-      element:<Category /> 
+      element:<>
+      <Navbar/>
+      <Category /> 
+      </>
     },
     {
       path:'*',
