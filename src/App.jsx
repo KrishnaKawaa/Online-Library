@@ -44,6 +44,11 @@ const router = createBrowserRouter(
       </>
     },
     {
+      path:"/addbooks",
+      element:
+      <AddBooks/>
+    },
+    {
       path:'*',
       element:<Notfound />
     }

@@ -1,7 +1,13 @@
 import './Navbar.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 
 export default function Navbar(){
+    const navigate = useNavigate();
+function handleClick(){
+    navigate('./addbooks');
+
+}
     return(
         <div className='navbarContainer'>
         <h3 className="title">BookWorld</h3>
@@ -11,7 +17,7 @@ export default function Navbar(){
             <Link className="link" to='/category'>Category</Link>
         </div>
         <div className="btnContainer">
-        <button className="addBookButton">AddBook</button>
+        <button onClick={handleClick} className="addBookButton">AddBook</button>
         </div>
         </div>
     )
